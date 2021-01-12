@@ -1,0 +1,139 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    font-size: 18px;
+    color: #000;
+    letter-spacing: .2rem;
+    line-height: normal;
+    overflow-x: hidden;
+
+    padding: 25px 40px;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    color: #000;
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+}
+
+p {
+    margin: 0.5rem 0;
+}
+
+img {
+    width: 100%;
+}
+
+.header {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.header  .text_1 {
+    width: auto;
+}
+.header  .text_2 {
+    padding-left: 5rem;
+    width: 700px;
+}
+
+
+.main_section {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.main_section h3 {
+    text-transform: capitalize;
+    padding: 1.5rem 0px 3rem 0px;
+}
+.img_box {
+    display: flex;
+    justify-content: center;
+}
+.img_box p {
+    writing-mode: vertical-lr;
+    padding-left: .8rem;
+    text-transform: uppercase;
+    font-size: .9rem;
+    font-weight: 400;
+}
+.box-1 {
+    width: 320px;
+}
+
+
+.main_box-2, 
+.main_box-5 {
+    padding-top: 6rem;
+}
+@media  (max-width: 1170px) { 
+    .header  .text_1 {
+        text-transform: capitalize;
+     }
+     .header .text_2 {
+         padding-left:  0rem;
+         width: auto;
+     }
+   .header  .text_2 h2 {
+    display: none;
+    }
+    .header  .text_2 p {
+      text-align: center;
+    }
+    .main_box-5 {
+      padding-top: 0rem !important;
+    }
+    .main_box-4,
+    .main_box-6 {
+        padding-top: 6rem ;
+    }
+}
+
+@media  (max-width: 768px) { 
+   .main_box-2, 
+   .main_box-5 {
+    padding-top: 0rem;
+   }
+}
+@media  (max-width: 425px) { 
+   .main_section h3 {
+    font-size: 1rem;
+  }
+}
+
+@media  (max-width: 320px) {
+.text_1 h1 {
+    font-size: 1rem;
+}
+.text_2 p {
+    font-size: .8rem;
+}
+   .box-1 {
+    width: 200px;
+}
+.img_box p {
+    padding-left: .5rem;
+    font-size: .5rem;
+}
+.main_section h3 {
+    font-size: .9rem;
+}
+
+}
